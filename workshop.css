@@ -51,10 +51,13 @@ nav a, .back { text-decoration: none; }
   width: min(100%, 29rem);
   justify-self: end;
   padding: clamp(.8rem, 1.8vw, 1.25rem);
-  background: #101e34;
+  background: #101e34 linear-gradient(118deg,
+    #19466826 8%, #4a728240 35%, #52659455 48%,
+    #94b5df39 53%, #6c80ba26 58%, #1830471a 76%);
   border: 1px solid #75abed80;
+  border-color: #9bc3eea6 #6e9acf80 #47638b8c #829fc486;
   border-radius: .55rem;
-  box-shadow: 0 1.2rem 3.5rem #03081299;
+  box-shadow: inset 0 1px #c3dcfa30, 0 1.2rem 3.5rem #03081299;
 }
 .exhibit > a { display: block; width: min(77%, 18rem); margin: auto; overflow: hidden; border-radius: .2rem; }
 .machine {
@@ -167,6 +170,30 @@ section.watermarked .feature { background-color: color-mix(in srgb, var(--surfac
   background-color: color-mix(in srgb, #edf4ed 85%, transparent);
 }
 .wide-feature { align-items: center; border: 1px solid #b9c9bf; overflow: hidden; gap: 0; }
+.portfolio-home :is(.feature, .wide-feature) {
+  background-image: linear-gradient(118deg,
+    #b58c582e 0%, #ffffff60 23%, #8db9ad38 39%, #a9a1cc45 49%,
+    #fffef2b8 54%, #ffffff34 58%, #d6ad663d 68%, #98b4cc45 85%, #ffffff55 100%);
+  background-size: 170% 100%;
+  background-position: 24% center;
+  border-color: #fcf9ef #bcb7ad #aaa392 #e9dfcf;
+  box-shadow: inset 0 1px #ffffffa0, 0 .35rem .9rem #372d201a;
+}
+.portfolio-home .compact-project { border-inline-start-color: #aa835d; }
+.portfolio-home .goodai-feature { transition: background-position .65s ease-out, box-shadow .3s ease-out; }
+.portfolio-home .goodai-feature:focus-within {
+  background-position: 82% center;
+  box-shadow: inset 0 1px #ffffffcc, 0 .45rem 1.1rem #372d2026;
+}
+@media (hover: hover) {
+  .portfolio-home .goodai-feature:hover {
+    background-position: 82% center;
+    box-shadow: inset 0 1px #ffffffcc, 0 .45rem 1.1rem #372d2026;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-home .goodai-feature { transition: none; }
+}
 .utilities-feature { margin-bottom: clamp(1rem, 2.5vw, 2.25rem); }
 .ai-projects .picture img, .tool-picture img { object-position: center top; }
 .ai-projects .goodai-picture img { object-position: center 29%; }
