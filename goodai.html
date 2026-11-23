@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Andrés del Campo’s C# agent for GoodAI’s 2017 Gradual Learning round, with the original submission, award results, and press coverage.">
+  <meta name="theme-color" content="#10131a">
+  <title>GoodAI Gradual Learning Challenge · Andrés del Campo</title>
+  <link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap top">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Andrés del Campo</a>
+    <nav aria-label="Main navigation"><a href="index.html#retro">Retro</a><a href="index.html#utilities">Utilities</a><a href="index.html#ai">AI</a><a class="github" href="https://github.com/andresdelcampo">GitHub</a></nav>
+  </div></header>
+  <main id="main"><div class="wrap detail">
+    <a class="back" href="index.html#ai">Workshop / AI</a>
+    <section class="detail-intro">
+      <div>
+        <div class="project-title"><h1>GoodAI Gradual Learning Challenge</h1><time class="status year" datetime="2017">2017</time></div>
+        <p class="lead">I shared the second prize in the qualitative category with a former NASA astronaut who founded a robotics company, a senior AI researcher from Japan, and an Austrian quantum physicist.</p>
+        <p class="lead">Could an agent learn a rule from examples and use it on a problem it had never seen? I built a C# agent to explore that question in the first round of GoodAI’s General AI Challenge.</p>
+        <div class="project-links">
+          <a class="button" href="https://github.com/andresdelcampo/aichallenge1">View the submission on GitHub</a>
+          <a class="action" href="assets/goodai-submission.pdf">Read the design paper (PDF)</a>
+        </div>
+      </div>
+      <figure>
+        <a href="assets/goodai-challenge-home.png"><img src="assets/goodai-challenge-home.png" alt="The original General AI Challenge homepage" width="1974" height="1876"></a>
+        <figcaption>The original General AI Challenge homepage.</figcaption>
+      </figure>
+    </section>
+    <section class="gallery detail-intro goodai-results" aria-labelledby="goodai-results">
+      <div class="feature-description">
+        <h2 id="goodai-results">What the agent learned</h2>
+        <p>The challenge environment sent text tasks and gave feedback on the responses. My agent compared examples to work out which parts of the input stayed constant and which ones changed. Two examples of reversing words, for instance, could become a rule the agent could apply to words it had never seen.</p>
+        <p>It learned patterns at both the word and character level. When examples at different lengths shared a pattern, the agent could infer how the rule extended to longer inputs. It could also combine learned transformations or recognize new ways of expressing familiar arithmetic operations.</p>
+        <p>GoodAI’s jury assessed the ideas behind each submission alongside a separate test of how the agents handled an unseen curriculum.</p>
+        <div class="project-links press-links">
+          <a class="action" href="https://www.goodai.com/research/ai-challenge/round-results/">GoodAI’s official results</a>
+          <a class="action" href="https://blog.marekrosa.org/2017/09/results-and-evaluation-for-gradual_30/">Original jury announcement</a>
+        </div>
+      </div>
+      <figure>
+        <a class="finalists-preview" href="assets/goodai-finalists.png" aria-label="View the full archived results screenshot"><img src="assets/goodai-finalists.png" alt="The original results page with portraits and comments from all four finalists" width="1001" height="2154" loading="lazy"></a>
+        <figcaption>From top to bottom, the original announcement features comments from Andrés del Campo Novales, Dan Barry, Susumu Katayama, and Andreas Ipp.</figcaption>
+      </figure>
+    </section>
+    <section class="gallery" aria-labelledby="goodai-press">
+      <h2 id="goodai-press">In the press</h2>
+      <p>The prize drew coverage in three print pieces, at least 17 online articles, and one radio segment, with further mentions on social media. A few highlights are below.</p>
+      <figure class="interview">
+        <figcaption><strong>Pronombres de Córdoba · Diario Córdoba interview</strong><br>The column’s name, “Córdoba ProNouns,” plays on pronouns and prominent local names. The interview covers how I got into programming and the work that led to the challenge. Select either page to read its PDF.</figcaption>
+        <div class="interview-spread">
+          <a href="assets/goodai-interview-page-1.pdf" aria-label="Read page 1 of the Diario Córdoba interview (PDF)"><img src="assets/goodai-interview-page-1.jpg" alt="First page of the Diario Córdoba interview with Andrés del Campo" width="1308" height="1675" loading="lazy"></a>
+          <a href="assets/goodai-interview-page-2.pdf" aria-label="Read page 2 of the Diario Córdoba interview (PDF)"><img src="assets/goodai-interview-page-2.jpg" alt="Second page of the Diario Córdoba interview with Andrés del Campo" width="1308" height="1675" loading="lazy"></a>
+        </div>
+      </figure>
+      <h3>Award coverage</h3>
+      <div class="pair press-roundup">
+        <article class="feature press-card">
+          <a href="assets/goodai-abc-coverage.pdf" aria-label="Read the archived ABC Andalucía article (PDF)"><img src="assets/goodai-abc-preview.jpg" alt="Headline and portrait from ABC Andalucía's Córdoba edition" width="808" height="1045" loading="lazy"></a>
+          <div>
+            <h4>ABC Andalucía</h4>
+            <p><a class="action" href="assets/goodai-abc-coverage.pdf" lang="es">Andrés del Campo, un cordobés en la élite mundial de la inteligencia artificial</a> <small>(PDF)</small></p>
+          </div>
+        </article>
+        <article class="feature press-card">
+          <a href="assets/goodai-diario-cordoba-award.jpg" aria-label="Enlarge the Diario Córdoba clipping"><img src="assets/goodai-diario-cordoba-award.jpg" alt="Diario Córdoba's award headline and portrait of Andrés del Campo" width="825" height="884" loading="lazy"></a>
+          <div>
+            <h4>Diario Córdoba and Europa Press</h4>
+            <p>The 8 October print edition carried the Europa Press report on the award.</p>
+            <a class="action" href="https://www.europapress.es/andalucia/noticia-cordobes-andres-campo-novales-unico-espanol-galardonado-mayor-concurso-inteligencia-artificial-20171007100134.html">Read the Europa Press report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div></main>
+  <footer><div class="wrap end"><span>Andrés del Campo’s Workshop</span><a href="#main">Back to top</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PersonalRSS is a private RSS and Atom reader that learns what you want to read and helps you review your subscriptions.">
+  <meta name="theme-color" content="#10131a">
+  <title>PersonalRSS · Andrés del Campo</title>
+  <link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap top">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Andrés del Campo</a>
+    <nav aria-label="Main navigation"><a href="index.html#retro">Retro</a><a href="index.html#utilities">Utilities</a><a href="index.html#ai">AI</a><a class="github" href="https://github.com/andresdelcampo">GitHub</a></nav>
+  </div></header>
+  <main id="main"><div class="wrap detail">
+    <a class="back" href="index.html#utilities">Workshop / Utilities</a>
+    <section class="detail-intro">
+      <div>
+        <h1><img class="project-wordmark" src="assets/personalrss-wordmark.svg" alt="PersonalRSS" width="900" height="260"></h1>
+        <p class="lead">I built PersonalRSS to keep following busy feeds without having to sift through every post. It brings RSS and Atom subscriptions into one private reader and learns which stories I want to see more often.</p>
+        <a class="action" href="https://github.com/andresdelcampo/PersonalRSS">View on GitHub</a>
+      </div>
+      <figure>
+        <a href="assets/personalrss.png"><img src="assets/personalrss.png" alt="PersonalRSS reading view with the subscription list blurred" width="1526" height="1030"></a>
+        <figcaption>The same feed can be read as cards, expanded articles, compact rows, or an image gallery.</figcaption>
+      </figure>
+    </section>
+    <section class="gallery detail-intro" aria-labelledby="personalrss-filtering">
+      <div class="feature-description">
+        <h2 id="personalrss-filtering">From daily reading to better feeds</h2>
+        <p><strong>Teach it as you read.</strong> Mark a story as Interested or Not interested. PersonalRSS brings likely matches into High, keeps uncertain stories in Maybe, and lets you review or correct anything it puts in Filtered.</p>
+        <p><strong>Keep control of the filter.</strong> You can inspect why a post was ranked, override individual decisions, or set rules for topics you always want to see or skip. The preference model runs locally, with an optional second opinion from an LM Studio model.</p>
+        <p><strong>See which subscriptions earn their place.</strong> Feed Quality shows each feed’s mix of High, Maybe, and Filtered posts over 30 days, 90 days, or the full archive. You can also publish the filtered results as RSS and read them in another reader.</p>
+      </div>
+      <figure>
+        <a href="assets/personalrss-feed-quality.png"><img src="assets/personalrss-feed-quality.png" alt="Feed Quality report comparing useful, uncertain, and filtered articles by subscription" width="1902" height="1664" loading="lazy"></a>
+        <figcaption>Feed Quality shows the mix of articles and how much feedback each subscription has received.</figcaption>
+      </figure>
+    </section>
+  </div></main>
+  <footer><div class="wrap end"><span>Andrés del Campo’s Workshop</span><a href="#main">Back to top</a></div></footer>
+</body>
+</html>
