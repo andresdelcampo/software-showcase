@@ -76,6 +76,24 @@ nav a, .back { text-decoration: none; }
 .exhibit figcaption p { margin-bottom: .55rem; color: #d3deef; }
 .spotlight-label { color: #f6a473; }
 .collection { padding-block: clamp(3rem, 5vw, 5.4rem); }
+.watermarked { position: relative; isolation: isolate; background-color: var(--paper); }
+.watermarked::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  max-width: 110rem;
+  margin-inline: auto;
+  pointer-events: none;
+  background: var(--watermark) var(--watermark-position, center) top / max(100%, 58rem) auto no-repeat round;
+  mix-blend-mode: multiply;
+  opacity: .36;
+  mask-image: linear-gradient(to bottom, rgb(0 0 0 / var(--watermark-start, 75%)), transparent);
+}
+.watermark-retro { --watermark: url("assets/watermark-retro.webp"); }
+.watermark-utilities { --watermark: url("assets/watermark-utilities.webp"); }
+.watermark-ai { --watermark: url("assets/watermark-ai.webp"); }
+main.watermarked { --watermark-start: 50%; }
 .sectionhead { align-items: baseline; justify-content: space-between; gap: 1rem 2rem; margin-bottom: 1.7rem; }
 h2 { font-size: clamp(2.4rem, 4.2vw, 4rem); font-weight: 620; line-height: 1.05; letter-spacing: -.055em; }
 .sectionhead p { max-width: 36rem; color: #525961; text-align: right; }
@@ -144,6 +162,10 @@ audio { width: 100%; max-width: 24rem; height: 2.25rem; }
 .sound-sample audio { display: block; margin: .65rem 0 .3rem; }
 .band { background: #dfe9e1; }
 .band .feature, .wide-feature { background: #edf4ed; border-color: #b9c9bf; }
+section.watermarked .feature { background-color: color-mix(in srgb, var(--surface) 85%, transparent); }
+.watermarked.band .feature, section.watermarked .wide-feature {
+  background-color: color-mix(in srgb, #edf4ed 85%, transparent);
+}
 .wide-feature { align-items: center; border: 1px solid #b9c9bf; overflow: hidden; gap: 0; }
 .utilities-feature { margin-bottom: clamp(1rem, 2.5vw, 2.25rem); }
 .ai-projects .picture img, .tool-picture img { object-position: center top; }
@@ -198,6 +220,9 @@ footer { padding-block: 1.8rem; }
   .hero-grid { gap: 2rem; }
   .hero { background-position: center, 65% center; }
   .exhibit { justify-self: start; }
+  .watermarked::before { background-size: max(100%, 42rem) auto; opacity: .29; }
+  .watermark-retro { --watermark-position: 5%; }
+  .watermark-utilities, .watermark-ai { --watermark-position: 94%; }
   .sectionhead { display: block; }
   .sectionhead p { text-align: left; margin-top: .6rem; }
   .picture { height: clamp(12rem, 50vw, 18rem); }

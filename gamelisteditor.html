@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GameList Editor is a Windows tool for editing gamelist.xml, batch-updating game metadata, and filling in missing media in retro game collections.">
+  <meta name="theme-color" content="#10131a">
+  <title>GameList Editor · Andrés del Campo</title>
+  <link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap top">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Andrés del Campo</a>
+    <nav aria-label="Main navigation"><a href="index.html#retro">Retro</a><a href="index.html#utilities">Utilities</a><a href="index.html#ai">AI</a><a class="github" href="https://github.com/andresdelcampo">GitHub</a></nav>
+  </div></header>
+  <main id="main" class="watermarked watermark-retro"><div class="wrap detail">
+    <a class="back" href="index.html#retro">Workshop / Retro</a>
+    <section class="detail-intro" aria-labelledby="gamelist-title">
+      <div>
+        <h1 id="gamelist-title">GameList Editor</h1>
+        <p class="lead">A Windows editor for the <code>gamelist.xml</code> files behind retro game collections. Find games with missing media, fix metadata across a whole selection, and preview the videos your front end will show.</p>
+        <p class="lead">I picked up NeeeeB's original project when it stopped recognizing newer systems and could no longer connect to ScreenScraper. My fork restored scraping, expanded system support, and added batch editing and video playback.</p>
+        <div class="project-links">
+          <a class="action" href="https://github.com/andresdelcampo/GameList_Editor/releases">View Windows releases</a>
+          <a class="action" href="https://github.com/andresdelcampo/GameList_Editor">View source on GitHub</a>
+        </div>
+      </div>
+      <figure>
+        <a href="https://user-images.githubusercontent.com/33843515/147408123-9b64fbbb-200e-4188-9f26-b7ee55af07d5.png"><img src="https://user-images.githubusercontent.com/33843515/147408123-9b64fbbb-200e-4188-9f26-b7ee55af07d5.png" alt="GameList Editor showing a retro game collection and its metadata"></a>
+        <figcaption>Browse the games in a system and inspect the selected game's metadata and artwork.</figcaption>
+      </figure>
+    </section>
+    <section class="gallery detail-intro" aria-labelledby="gamelist-workflow">
+      <div class="feature-description">
+        <h2 id="gamelist-workflow">Tidy up a collection</h2>
+        <p><strong>Find the entries that need attention.</strong> Filter by genre, publisher, or rating, or look for games that share a name or ROM. The Missing Videos filter brings gaps in your media collection into view.</p>
+        <p><strong>Edit a group in one pass.</strong> Select several games and update fields such as region, genre, or developer together. You can also mark entries as favorites, hidden, or suitable for kids.</p>
+        <p><strong>Fill in missing media.</strong> Replace artwork, preview or swap a video, and use ScreenScraper to look up individual entries as you review them.</p>
+      </div>
+      <div class="feature-description">
+        <h2>Open your game list</h2>
+        <p>Use <strong>File → Choose folder</strong> and select the folder containing your system folders. You can work with a local copy or point to a network share from a RetroPie or Recalbox setup.</p>
+        <p>To scrape media, enter your ScreenScraper credentials under <strong>Options → Network → Configure</strong>. The Windows build requires Windows Media Player.</p>
+        <p><a class="action" href="https://github.com/andresdelcampo/GameList_Editor#quickstart-for-new-users">Read the setup guide</a></p>
+      </div>
+    </section>
+    <section class="gallery" aria-labelledby="gamelist-screenshots">
+      <h2 id="gamelist-screenshots">Screenshots</h2>
+      <p>Select any screenshot to open it at full size.</p>
+      <div class="pair">
+        <figure>
+          <a href="https://user-images.githubusercontent.com/33843515/147408203-ff75b5da-4b4a-484c-b771-fa0eb2b887c1.png"><img src="https://user-images.githubusercontent.com/33843515/147408203-ff75b5da-4b4a-484c-b771-fa0eb2b887c1.png" alt="A second view of GameList Editor from the fork's README" loading="lazy"></a>
+          <figcaption>A second look at the editor from the fork's README.</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/gamelist-missing-artwork.webp"><img src="assets/gamelist-missing-artwork.webp" alt="Master System games filtered to show entries with missing pictures" width="800" height="484" loading="lazy"></a>
+          <figcaption>The Missing Picture filter narrows the list to games that still need artwork.</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/gamelist-rom-details.webp"><img src="assets/gamelist-rom-details.webp" alt="More Infos dialog showing play history fields and ROM checksums" width="800" height="486" loading="lazy"></a>
+          <figcaption>More Infos shows play history fields and CRC32, MD5, and SHA-1 checksums.</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/gamelist-themes.webp"><img src="assets/gamelist-themes.webp" alt="Five GameList Editor windows in different light and dark themes" width="1186" height="968" loading="lazy"></a>
+          <figcaption>The same game list in five of the editor's themes.</figcaption>
+        </figure>
+      </div>
+      <p class="note">The filter, ROM details, and theme screenshots are from <a href="https://github.com/NeeeeB/GameList_Editor#readme">NeeeeB's original project</a>.</p>
+    </section>
+  </div></main>
+  <footer><div class="wrap end"><span>Andrés del Campo's Workshop</span><a href="#main">Back to top</a></div></footer>
+</body>
+</html>
